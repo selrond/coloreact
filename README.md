@@ -10,5 +10,5 @@ Nice little color generator built in React.js
 ### Installing
 
 1. Clone this repo
-2. `yarn i` or `npm i`
+2. `yarn install` or `npm i`
 3. `yarn start` or `npm start`
