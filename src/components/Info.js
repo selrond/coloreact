@@ -8,8 +8,8 @@ const ColorName = styled.div`
 
 	& > * {
 		font-size: 2em;
-		font-family: 'Avenir Next';
-		font-weight: 800;
+		font-family: 'Raleway';
+		font-weight: 900;
 		text-transform: uppercase;
 		margin: 0;
 		padding: 0;
@@ -17,13 +17,13 @@ const ColorName = styled.div`
 `;
 
 class Info extends Component {
-  render() {
-    return (
-      <ColorName>
-      	<h2>Pale Violet Red</h2>
-      </ColorName>
-    );
-  }
+	render() {
+		return (
+			<ColorName>
+				<h2>Pale Violet Red</h2>
+			</ColorName>
+		);
+	}
 }
 
 export default Info;

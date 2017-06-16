@@ -9,14 +9,14 @@ const SwatchWrapper = styled.div`
 `;
 
 class Swatch extends Component {
-  render() {
-    return (
-      <SwatchWrapper>
-      	<Color />
-      	<Info />
-      </SwatchWrapper>
-    );
-  }
+	render() {
+		return (
+			<SwatchWrapper>
+				<Color />
+				<Info />
+			</SwatchWrapper>
+		);
+	}
 }
 
 export default Swatch;
