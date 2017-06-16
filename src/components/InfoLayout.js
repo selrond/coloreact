@@ -16,7 +16,7 @@ const ColorName = styled.div`
 	}
 `;
 
-class Info extends Component {
+class InfoLayout extends Component {
 	render() {
 		return (
 			<ColorName>
@@ -26,4 +26,4 @@ class Info extends Component {
 	}
 }
 
-export default Info;
+export default InfoLayout;

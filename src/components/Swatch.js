@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Color from './Color';
-import Info from './Info';
+import ColorLayout from './ColorLayout';
+import InfoLayout from './InfoLayout';
 
 import styled from 'styled-components';
 
@@ -12,8 +12,8 @@ class Swatch extends Component {
 	render() {
 		return (
 			<SwatchWrapper>
-				<Color />
-				<Info />
+				<ColorLayout />
+				<InfoLayout />
 			</SwatchWrapper>
 		);
 	}

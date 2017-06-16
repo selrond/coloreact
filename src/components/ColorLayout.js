@@ -7,7 +7,7 @@ const ColorBox = styled.div`
 	background-color: palevioletred;
 `;
 
-class Color extends Component {
+class ColorLayout extends Component {
   render() {
     return (
       <ColorBox />
@@ -15,4 +15,4 @@ class Color extends Component {
   }
 }
 
-export default Color;
+export default ColorLayout;
