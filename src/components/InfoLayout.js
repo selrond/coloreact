@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const Info = styled.div`
+	padding: 2.5em;
+`;
+
 const ColorName = styled.div`
 	width: 100%;
-	padding: 10%;
 	background: #fff;
+	margin-bottom: 1.25em;
 
 	& > * {
 		font-size: 2em;
@@ -16,12 +20,23 @@ const ColorName = styled.div`
 	}
 `;
 
+const ColorCode = styled.div`
+	font-size: 1.5em;
+	font-family: "Roboto Mono";
+	text-transform: uppercase;
+`;
+
 class InfoLayout extends Component {
 	render() {
 		return (
-			<ColorName>
-				<h2>Pale Violet Red</h2>
-			</ColorName>
+			<Info>
+				<ColorName>
+					<h2>Pale Violet Red</h2>
+				</ColorName>
+				<ColorCode>
+					<span>#db7093</span>
+				</ColorCode>
+			</Info>
 		);
 	}
 }

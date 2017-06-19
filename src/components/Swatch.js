@@ -5,7 +5,8 @@ import InfoLayout from './InfoLayout';
 import styled from 'styled-components';
 
 const SwatchWrapper = styled.div`
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	font-size: 1rem;
+	box-shadow: 2px 2px 7px rgba(50, 50, 50, .2);
 `;
 
 class Swatch extends Component {
