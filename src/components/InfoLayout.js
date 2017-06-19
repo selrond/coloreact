@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 const Info = styled.div`
 	padding: 2.5em;
+	background: #fff;
 `;
 
 const ColorName = styled.div`
 	width: 100%;
-	background: #fff;
 	margin-bottom: 1.25em;
 
 	& > * {
