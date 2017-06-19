@@ -9,6 +9,7 @@ const SwatchWrapper = styled.div`
 	font-size: 1rem;
 	box-shadow: 2px 2px 7px rgba(50, 50, 50, .2);
 	top: 10vh;
+	max-width: 400px;
 `;
 
 class Swatch extends Component {
