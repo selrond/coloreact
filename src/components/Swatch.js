@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ColorLayout from './ColorLayout';
-import InfoLayout from './InfoLayout';
+import ColorBox from './ColorBox';
+import ColorInfo from './ColorInfo';
 
 import styled from 'styled-components';
 
@@ -16,8 +16,8 @@ class Swatch extends Component {
 	render() {
 		return (
 			<SwatchWrapper>
-				<ColorLayout />
-				<InfoLayout />
+				<ColorBox exactColor="palevioletred"/>
+				<ColorInfo colorName="Pale Violet Red" colorCode="#db7093" />
 			</SwatchWrapper>
 		);
 	}

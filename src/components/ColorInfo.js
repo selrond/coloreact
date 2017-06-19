@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Info = styled.div`
+const InfoLayout = styled.div`
 	padding: 2.5em;
 	background: #fff;
 `;
@@ -26,19 +26,21 @@ const ColorCode = styled.div`
 	text-transform: uppercase;
 `;
 
-class InfoLayout extends Component {
+
+
+class ColorInfo extends Component {
 	render() {
 		return (
-			<Info>
+			<InfoLayout>
 				<ColorName>
-					<h2>Pale Violet Red</h2>
+					<h2>{this.props.colorName}</h2>
 				</ColorName>
 				<ColorCode>
-					<span>#db7093</span>
+					<span>{this.props.colorCode}</span>
 				</ColorCode>
-			</Info>
+			</InfoLayout>
 		);
 	}
 }
 
-export default InfoLayout;
+export default ColorInfo;
