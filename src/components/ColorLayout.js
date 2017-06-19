@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Generate from './Generate'
 import styled from 'styled-components';
 
 const ColorBox = styled.div`
@@ -10,7 +11,9 @@ const ColorBox = styled.div`
 class ColorLayout extends Component {
   render() {
     return (
-      <ColorBox />
+      <ColorBox>
+      	<Generate />
+      </ColorBox>
     );
   }
 }
