@@ -12,9 +12,15 @@ const GenerateIcon = styled.svg`
 	height: auto;
 `;
 
-const Generate = ({ onClick }) => {
+function generateColor(e) {
+	e.preventDefault();
+	console.log('I was clicked');
+}
+
+
+const Generate = () => {
 	return (
-		<GenerateIconWrapper onClick={onClick}>
+		<GenerateIconWrapper onClick={generateColor}>
 			<GenerateIcon xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 				<path fill="none" stroke="#FFF" strokeWidth="2" d="M16 3h5v5M4 20L21 3m0 13v5h-5m-1-6l6 6M4 4l5 5" strokeLinecap="round" strokeLinejoin="round"/>
 			</GenerateIcon>
@@ -22,7 +28,7 @@ const Generate = ({ onClick }) => {
 	)
 }
 
-Generate.propTypes = {
+GenerateIconWrapper.propTypes = {
 	onClick: PropTypes.func.isRequired
 }
 

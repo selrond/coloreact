@@ -12,16 +12,6 @@ const ColorLayout = styled.div`
 `;
 
 class ColorBox extends Component {
-	constructor(props) {
-		super(props);
-		this.generateColor = this.generateColor.bind(this);
-		}
-
-	generateColor(e) {
-		e.preventDefault();
-		console.log('I was clicked');
-	}
-
 	render() {
 		return (
 			<ColorLayout {...this.props}>
