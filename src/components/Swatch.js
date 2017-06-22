@@ -35,8 +35,7 @@ class Swatch extends Component {
 		return "#" + randomColor;
 	}
 
-	generateColor(e) {
-		e.preventDefault();
+	generateColor() {
 		const generatedColor = this.randomColorGenerator();
 		const colorName = ntc.name(generatedColor)[1];
 
