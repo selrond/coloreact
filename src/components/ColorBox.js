@@ -15,7 +15,7 @@ class ColorBox extends Component {
 	render() {
 		return (
 			<ColorLayout {...this.props}>
-				<Generate onClick={this.props.generateColor} />
+				<Generate generateColor={this.props.generateColor} />
 			</ColorLayout>
 		);
 	}

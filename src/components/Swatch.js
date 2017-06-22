@@ -13,29 +13,35 @@ const SwatchWrapper = styled.div`
 	max-width: 400px;
 `;
 
-function randomColorGenerator() {
-	var randomColor = "";
-	const hexNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-	var randomHexNum = function() {
-		return hexNums[Math.floor(Math.random() * hexNums.length)];
-	};
-	for (let i = 0; i < 6; i++) {
-		randomColor += randomHexNum();
-	}
-	return "#" + randomColor;
-};
-
-function generateColor(e) {
-	e.preventDefault();
-	console.log(randomColorGenerator());
-}
-
 class Swatch extends Component {
 	constructor() {
 		super();
 		this.state = {
 			color: "palevioletred"
 		};
+
+		this.generateColor = this.generateColor.bind(this);
+	}
+
+	randomColorGenerator() {
+		var randomColor = "";
+		const hexNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+		var randomHexNum = function() {
+			return hexNums[Math.floor(Math.random() * hexNums.length)];
+		};
+		for (let i = 0; i < 6; i++) {
+			randomColor += randomHexNum();
+		}
+		return "#" + randomColor;
+	}
+
+	generateColor(e) {
+		e.preventDefault();
+		this.setState(function (state, props) {
+			return {
+				color: this.randomColorGenerator()
+			}
+		})
 	}
 
 	getColorName() {
@@ -49,7 +55,7 @@ class Swatch extends Component {
 	render() {
 		return (
 			<SwatchWrapper>
-				<ColorBox exactColor={this.state.color} generateColor={this.generateColor()} />
+				<ColorBox exactColor={this.state.color} generateColor={this.generateColor} />
 				<ColorInfo colorName={this.getColorName()} colorCode={this.getColorCode()} />
 			</SwatchWrapper>
 		);
