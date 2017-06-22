@@ -32,7 +32,7 @@ class Swatch extends Component {
 		return (
 			<SwatchWrapper>
 				<ColorBox exactColor={this.state.color}/>
-				<ColorInfo colorName={this.getColorName} colorCode={this.getColorCode} />
+				<ColorInfo colorName={this.getColorName()} colorCode={this.getColorCode()} />
 			</SwatchWrapper>
 		);
 	}
