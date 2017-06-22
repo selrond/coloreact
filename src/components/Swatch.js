@@ -13,11 +13,26 @@ const SwatchWrapper = styled.div`
 `;
 
 class Swatch extends Component {
+	constructor() {
+		super();
+		this.state = {
+			color: "palevioletred"
+		};
+	}
+
+	getColorName() {
+		return "got name"
+	}
+
+	getColorCode() {
+		return "got code"
+	}
+
 	render() {
 		return (
 			<SwatchWrapper>
-				<ColorBox exactColor="palevioletred"/>
-				<ColorInfo colorName="Pale Violet Red" colorCode="#db7093" />
+				<ColorBox exactColor={this.state.color}/>
+				<ColorInfo colorName={this.getColorName} colorCode={this.getColorCode} />
 			</SwatchWrapper>
 		);
 	}
