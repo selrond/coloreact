@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ColorBox from './ColorBox';
 import ColorInfo from './ColorInfo';
-import '../vendor/ntc.js';
-
+import ntc from 'ntc';
 import styled from 'styled-components';
 
 const SwatchWrapper = styled.div`
@@ -17,7 +16,7 @@ class Swatch extends Component {
 	constructor() {
 		super();
 		this.state = {
-			color: "palevioletred"
+			colorCode: "#000",
 		};
 
 		this.generateColor = this.generateColor.bind(this);
@@ -37,26 +36,31 @@ class Swatch extends Component {
 
 	generateColor(e) {
 		e.preventDefault();
+		const generatedColor = this.randomColorGenerator();
+		const colorName = ntc.name(generatedColor)[1];
+
 		this.setState(function (state, props) {
 			return {
-				color: this.randomColorGenerator()
+				colorCode: generatedColor,
+				colorName: colorName
 			}
-		})
+		});
 	}
 
 	getColorName() {
-		return "got name"
+		// console.log(window.ntc.name(this.state.colorCode)[1]);
+		console.log(window)
 	}
 
 	getColorCode() {
-		return "got code"
+		console.log('getColorCode');
 	}
 
 	render() {
 		return (
 			<SwatchWrapper>
-				<ColorBox exactColor={this.state.color} generateColor={this.generateColor} />
-				<ColorInfo colorName={this.getColorName()} colorCode={this.getColorCode()} />
+				<ColorBox exactColor={this.state.colorCode} generateColor={this.generateColor} />
+				<ColorInfo colorName={this.state.colorName} colorCode={this.state.colorCode} />
 			</SwatchWrapper>
 		);
 	}
