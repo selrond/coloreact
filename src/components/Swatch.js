@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ColorBox from './ColorBox';
 import ColorInfo from './ColorInfo';
+import '../vendor/ntc.js';
 
 import styled from 'styled-components';
 
