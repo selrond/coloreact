@@ -23,6 +23,7 @@ class Swatch extends Component {
 		this.generateColor = this.generateColor.bind(this);
 	}
 
+
 	randomColorGenerator() {
 		var randomColor = "";
 		const hexNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
@@ -48,12 +49,15 @@ class Swatch extends Component {
 	}
 
 	getColorName() {
-		// console.log(window.ntc.name(this.state.colorCode)[1]);
 		console.log(window)
 	}
 
 	getColorCode() {
 		console.log('getColorCode');
+	}
+
+	componentWillMount() {
+		this.generateColor();
 	}
 
 	render() {
