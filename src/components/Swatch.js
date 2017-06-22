@@ -10,6 +10,7 @@ const SwatchWrapper = styled.div`
 	box-shadow: 2px 2px 7px rgba(50, 50, 50, .2);
 	top: 10vh;
 	max-width: 400px;
+	color: #333;
 `;
 
 class Swatch extends Component {
