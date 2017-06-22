@@ -17,7 +17,7 @@ class Swatch extends Component {
 		super();
 		this.state = {
 			colorCode: "#000",
-			colorName: black
+			colorName: "black"
 		};
 
 		this.generateColor = this.generateColor.bind(this);
