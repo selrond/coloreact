@@ -2,8 +2,14 @@
 
 # Name that Swatch!
 
+
 Nice little random color swatch generator built in React.js.
-Yes, it names what it generates!
+
+Inspired by [Tiny PMS Match (@tinypmsmatch)](https://www.instagram.com/tinypmsmatch/).
+
+...and yes, it names what it generates, thanks to [Name that Color - an awesome project by Chirag Mehta](http://chir.ag/projects/name-that-color).
+
+See it [LIVE](https://selrond.github.io/name-that-swatch/)!
 
 ## Getting Started
 
