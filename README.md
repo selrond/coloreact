@@ -1,6 +1,6 @@
-# name-that-swatch
-
 ![](./nts-screenshot.png)
+
+# Name that Swatch!
 
 Nice little random color swatch generator built in React.js.
 Yes, it names what it generates!
