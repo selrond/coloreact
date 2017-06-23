@@ -1,5 +1,9 @@
-# coloreact
-Nice little color generator built in React.js
+# name-that-swatch
+
+![](./nts-screenshot.png)
+
+Nice little random color swatch generator built in React.js.
+Yes, it names what it generates!
 
 ## Getting Started
 
@@ -10,5 +14,5 @@ Nice little color generator built in React.js
 ### Installing
 
 1. Clone this repo
-2. `yarn` or `yarn install` or `npm i`
+2. `yarn` or `npm i`
 3. `yarn start` or `npm start`
